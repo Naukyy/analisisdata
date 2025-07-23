@@ -9,8 +9,8 @@ from streamlit.components.v1 import html
 
 @st.cache_data
 def load_data():
-    hour_data = pd.read_csv('./data/hour.csv')
-    day_data = pd.read_csv('./data/day.csv')
+    hour_data = pd.read_csv('https://raw.githubusercontent.com/Naukyy/analisisdata/refs/heads/main/Data/hour.csv')
+    day_data = pd.read_csv('https://raw.githubusercontent.com/Naukyy/analisisdata/refs/heads/main/Data/day.csv')
     return hour_data, day_data
 
 hour_data, day_data = load_data()
