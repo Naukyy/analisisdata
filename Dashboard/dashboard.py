@@ -41,7 +41,7 @@ if options == "Analisis Suhu & Cuaca":
     weather_grouped = hour_data.groupby('weathersit').agg({'cnt': 'sum', 'temp': 'mean', 'atemp': 'mean'}).reset_index()
 
     fig, ax = plt.subplots(figsize=(10, 6))
-    sns.barplot(x='weathersit', y='cnt', data=weather_grouped, ax=ax, palette="viridis")
+    sns.barplot(x='weathersit', y='cnt', data=weather_grouped, ax=ax, palette="viridis", hue='weathersit', legend=False)
     ax.set_title("Jumlah Sewa Sepeda Berdasarkan Cuaca")
     ax.set_xlabel("Cuaca")
     ax.set_ylabel("Jumlah Sepeda yang Disewa")
