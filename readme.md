@@ -6,8 +6,6 @@
 ### Username  : naufalzakyr
 
 ## Setup environment
-conda create --name main-ds
-conda activate main-ds
 pip install pandas scipy matplotlib seaborn jupyter streamlit altair
 
 ## Run steamlit app
